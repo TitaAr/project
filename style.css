@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Send+Flowers&display=swap');
+:root{
+    --primary:#000000;
+    --gold:#B89308;
+    --back: #654321;
+    --font1:'PT Serif', serif;
+    --font2:'Send Flowers', cursive;
+    --sidepading:10%;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--font1);
+    margin: 0;
+}
+body{
+    margin: 0;
+    background:var(--back);
+    color: var(--primary);
+    
+    width: 100%;
+}
+.mainnav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:var(--gold) ;
+    padding: 10px 100px;
+    position: fixed;
+    justify-content:space-between;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.mainnavimage{
+   height: 50px;
+   width: 50px;
+   display: flex;
+   align-items: center;
+}
+.mainnavelements{
+    display: flex;
+    margin:0 0 0 auto;
+}
+.mainnavelement{
+    list-style-type: none;
+    overflow: hidden;
+    text-transform:uppercase;
+    margin: auto 0.3em;
+    font-weight: 600;
+    
+  } 
+  .mainnavelement a{
+    display: inline-block;
+  color:var(--primary);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 5px 5px;
+}
+.mainnavelement a:hover{
+    color: var(--gold);
+    background-color:var(--back);
+
+}
+.button1{
+    background-color:var(--primary);
+    color:var(--gold);
+    font-weight: 600;
+    margin-left: auto 0.5em;
+    overflow: hidden;
+    transition: 0.2s;
+    text-transform:uppercase;
+    padding: 1em;
+    margin: auto 1em;
+}
+.button1:hover{
+  background-color: var(--gold);
+  color:var(--primary);
+}
+.hoverhome{
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    background-color: var(--gold);
+    list-style-position: centre;
+}
+.menuholder:hover .hoverhome{
+ visibility: visible;
+}
+section {
+    padding: 300px 200px ;
+   
+ 
+   
+}
+.sct1{
+   background:url(Titan/photo3.jpg);
+   background-position:center ;
+   background-size: cover;  
+}
+
+h1{
+    color:var(--gold);
+    font-family:var(--font2);
+    font-size: 50px;
+   
+   }
+   .button2 {
+    background-color:var(--gold);
+    color:var(--primary);
+    display: inline-block;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family:  var(--font1);
+    overflow: hidden;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.button2:hover{
+    transform: scale(1.3); 
+
+}
+
+.title{
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 80px;
+    font-family:var(--font2) ;
+    color: var(--gold);
+}
+.chef{
+    display:flex;
+    justify-content:center;
+    margin-top: 25px;
+    font-family:var(--font1) ;
+    color:var(--primary);
+}
+.chefs{
+    background-color:var(--gold);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 30px 15px;
+
+}
+.Chefs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+.chefs:hover{
+    transform: scale(1.3);
+}
